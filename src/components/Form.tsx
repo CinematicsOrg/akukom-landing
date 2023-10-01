@@ -2,11 +2,14 @@ import { Formik } from 'formik';
 import { useRef, useState } from 'react';
 import FadeLoader from 'react-spinners/FadeLoader';
 
+const scriptUrl = import.meta.env.VITE_SCRIPT_URL;
+
 interface FormProps {
   fieldName: string;
   inputType?: string;
   buttonName: string;
   inputPlaceholder?: string;
+  bottomText?: string;
 }
 
 const Form = ({
@@ -14,6 +17,7 @@ const Form = ({
   fieldName,
   inputType,
   inputPlaceholder,
+  bottomText,
 }: FormProps) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [formSubmitSuccess, setFormSubmitSuccess] = useState<boolean>(false);
@@ -23,9 +27,6 @@ const Form = ({
   const initialState = {
     [fieldName]: '',
   };
-
-  const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbwuoGPJ5qNH01dx64uRnzqIwTnobflwV5TumptonP7WOoSNHhvupcSq3S7cd5ll6L8J/exec';
 
   const validate = (values: typeof initialState) => {
     const errors: {
@@ -129,9 +130,11 @@ const Form = ({
                 {buttonName}
               </button>
             </form>
-            <div className="text-green-700 text-xs/4 md:text-base/5 mt-1">
-              Join the waiting list
-            </div>
+            {bottomText ? (
+              <div className="text-green-700 text-xs/4 md:text-base/5 mt-1">
+                {bottomText}
+              </div>
+            ) : null}
           </div>
         )}
       </Formik>

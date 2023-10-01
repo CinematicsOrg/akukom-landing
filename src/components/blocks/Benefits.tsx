@@ -1,4 +1,5 @@
 import BenefitCard from '../BenefitCard';
+import PaddinWrapper from '../PaddinWrapper';
 
 const benefits = [
   {
@@ -30,12 +31,16 @@ const Benefits = () => {
     );
   });
   return (
-    <div>
-      <div className="text-center">Benefits</div>
-      <div className="grid grid-rows-3 md:grid-cols-3 md:gap-x-8">
-        {content}
+    <PaddinWrapper>
+      <div className="text-black md:mx-4 md:my-11">
+        <div className="text-center text-2xl/7 md:text-[42px]/[51px] font-medium mb-7 md:mb-16">
+          Benefits
+        </div>
+        <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 md:gap-x-8">
+          {content}
+        </div>
       </div>
-    </div>
+    </PaddinWrapper>
   );
 };
 
