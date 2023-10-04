@@ -112,7 +112,7 @@ const Form = ({
                   placeholder={`${
                     inputPlaceholder ? inputPlaceholder : 'Enter your email'
                   }`}
-                  className="w-full pl-2 py-3 border border-gray-400 rounded-lg overflow-hidden"
+                  className="w-full pl-2 py-3 border border-gray-400 rounded-lg overflow-hidden dark:text-white dark:bg-black"
                   onChange={handleChange}
                   onBlur={handleBlur}
                 />
