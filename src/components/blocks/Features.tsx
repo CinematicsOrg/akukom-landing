@@ -40,7 +40,7 @@ const Features = () => {
   });
   return (
     <div className="text-black  px-4 md:px-14 md:py-11 bg-[#F6EFD7]">
-      <div className="text-center font-medium text-2xl/7 md:text-[42px]/[51px] mb-7 md:mb-24">
+      <div className="text-center font-medium text-2xl/7 md:text-[42px]/[51px] mb-7 md:mb-24 pt-7 md:pt-0">
         Features
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 md:gap-x-[130px]">
