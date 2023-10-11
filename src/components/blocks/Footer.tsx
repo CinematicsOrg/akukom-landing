@@ -39,21 +39,21 @@ const Footer = () => {
             </div>
             <div className="flex space-x-1 mdPro:space-x-3 ">
               <a
-                href="https://www.instagram.com/cinematicsng/"
+                href="https://www.instagram.com/akukomio/#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/svg/instagram.svg" alt="ig icon" />
               </a>
               <a
-                href="https://www.instagram.com/cinematicsng/"
+                href="https://twitter.com/akukomio"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src="/svg/tweeter.svg" alt="tweeter icon" />
               </a>
               <a
-                href="https://www.instagram.com/cinematicsng/"
+                href="https://www.tiktok.com/@akukomio"
                 target="_blank"
                 rel="noopener noreferrer"
               >
